@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/jessepollak/payment.git"
   },
-  "main": "dist/payment.js",
+  "main": "lib/index.js",
   "scripts": {
     "compile": "coffee -o lib/ --compile ./src/*.coffee",
     "build": "NODE_ENV=production webpack",
