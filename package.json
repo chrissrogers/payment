@@ -1,6 +1,6 @@
 {
   "name": "payment",
-  "version": "2.3.0",
+  "version": "2.3.0-patch-01",
   "description": "A general purpose library for building credit card forms, validating inputs and formatting numbers. Base on jquery.payment by @stripe, but without the jQuery.",
   "keywords": [
     "payment",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/jessepollak/payment.git"
   },
-  "main": "lib/index.js",
+  "main": "dist/payment.js",
   "scripts": {
     "compile": "coffee -o lib/ --compile ./src/*.coffee",
     "build": "NODE_ENV=production webpack",
