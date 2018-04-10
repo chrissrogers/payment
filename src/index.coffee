@@ -379,7 +379,8 @@ setCardType = (e) ->
 cursorSafeAssignValue = (target, value) ->
   selectionEnd = target.selectionEnd
   QJ.val(target, value)
-  target.selectionEnd = selectionEnd if selectionEnd
+  if typeof selectionEnd == 'number' && global.document.activeElement == target
+    target.selectionEnd = selectionEnd
 
 # Public
 

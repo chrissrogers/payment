@@ -494,7 +494,7 @@ var payment =
 	  var selectionEnd;
 	  selectionEnd = target.selectionEnd;
 	  QJ.val(target, value);
-	  if (selectionEnd) {
+	  if (typeof selectionEnd === 'number' && global.document.activeElement === target) {
 	    return target.selectionEnd = selectionEnd;
 	  }
 	};
